@@ -1,0 +1,17 @@
+<div
+  class="seance"
+>
+  <h3>
+    
+    <div class="btn-group">
+
+      <button class="btn btn-outline-danger" (click)="onDelete(seance)">Delete</button>
+      <button class="btn btn-outline-primary" (click)="onUpdateRequest(seance)">Edit</button>
+    </div>
+  </h3>
+    Date: {{ seance.date | date:'mediumDate'}} <br>
+    Start At:  {{ seance.date | date:'shortTime'}} <br>
+    End At:  {{seance.dateEnd |  date:'shortTime'}} <br>
+    Movie: {{ seance.movieId }} <br>
+    Hall: {{ seance.hallId }}
+</div>

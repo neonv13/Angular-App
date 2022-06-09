@@ -1,0 +1,169 @@
+{
+  "movies": [
+    {
+      "title": "Batman",
+      "duration": 150,
+      "id": 3
+    },
+    {
+      "title": "Avengers",
+      "duration": 300,
+      "id": 4
+    },
+    {
+      "title": "Lord of the rings",
+      "duration": 400,
+      "id": 5
+    },
+    {
+      "title": "Hobbit",
+      "duration": 350,
+      "id": 6
+    },
+    {
+      "title": "SpiderMan",
+      "duration": 90,
+      "id": 7
+    }
+  ],
+  "halls": [
+    {
+      "nr": 1,
+      "seats": 80,
+      "id": 1
+    },
+    {
+      "nr": 2,
+      "seats": 60,
+      "id": 2
+    },
+    {
+      "nr": 3,
+      "seats": 90,
+      "id": 3
+    },
+    {
+      "nr": 4,
+      "seats": 55,
+      "id": 4
+    },
+    {
+      "nr": 5,
+      "seats": 60,
+      "id": 5
+    }
+  ],
+  "seances": [
+    {
+      "date": "2022-06-09T10:49:00.000Z",
+      "dateEnd": "2022-06-09T16:39:00.000Z",
+      "seatsTaken": [
+        4,
+        13,
+        26,
+        28,
+        31,
+        34,
+        54
+      ],
+      "movieId": "6",
+      "hallId": "4",
+      "id": 1
+    },
+    {
+      "date": "2022-01-25T09:34:00.000Z",
+      "dateEnd": "2022-01-25T14:34:00.000Z",
+      "seatsTaken": [
+        45,
+        46,
+        47,
+        48,
+        49,
+        34,
+        28,
+        29,
+        30,
+        31
+      ],
+      "movieId": "4",
+      "hallId": "2",
+      "id": 2
+    },
+    {
+      "date": "2022-01-25T13:15:00.000Z",
+      "dateEnd": "2022-01-25T15:45:00.000Z",
+      "seatsTaken": [
+        47,
+        48,
+        49,
+        42,
+        43,
+        44,
+        45
+      ],
+      "movieId": "3",
+      "hallId": "1",
+      "id": 3
+    },
+    {
+      "date": "2022-01-26T06:36:00.000Z",
+      "dateEnd": "2022-01-26T13:16:00.000Z",
+      "seatsTaken": [
+        22,
+        24,
+        31
+      ],
+      "movieId": "5",
+      "hallId": "2",
+      "id": 4
+    },
+    {
+      "date": "2022-01-25T06:36:00.000Z",
+      "dateEnd": "2022-01-25T13:16:00.000Z",
+      "seatsTaken": [],
+      "movieId": "5",
+      "hallId": "4",
+      "id": 5
+    },
+    {
+      "date": "2022-01-25T01:38:00.000Z",
+      "dateEnd": "2022-01-25T03:08:00.000Z",
+      "seatsTaken": [],
+      "movieId": "7",
+      "hallId": "1",
+      "id": 6
+    },
+    {
+      "date": "2022-01-25T01:39:00.000Z",
+      "dateEnd": "2022-01-25T03:09:00.000Z",
+      "seatsTaken": [],
+      "movieId": "7",
+      "hallId": "2",
+      "id": 7
+    },
+    {
+      "date": "2022-01-25T08:57:00.000Z",
+      "dateEnd": "2022-01-25T13:57:00.000Z",
+      "seatsTaken": [],
+      "movieId": "4",
+      "hallId": "3",
+      "id": 8
+    },
+    {
+      "date": "2022-01-25T22:28:00.000Z",
+      "dateEnd": "2022-01-26T04:18:00.000Z",
+      "seatsTaken": [],
+      "movieId": "6",
+      "hallId": "4",
+      "id": 9
+    },
+    {
+      "date": "2022-06-16T10:46:00.000Z",
+      "dateEnd": "2022-06-16T13:16:00.000Z",
+      "seatsTaken": [],
+      "movieId": "3",
+      "hallId": "5",
+      "id": 10
+    }
+  ]
+}

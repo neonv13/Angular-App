@@ -1,0 +1,14 @@
+<div
+  class="movie"
+>
+  <h3>
+    {{ movie.title }}
+    <div class="btn-group">
+
+      <button class="btn btn-outline-danger" (click)="onDelete(movie)">Delete</button>
+      <button class="btn btn-outline-primary" (click)="onUpdateRequest(movie)">Edit</button>
+    </div>
+  </h3>
+  <p>Duration: {{movie.duration}}</p>
+</div>
+

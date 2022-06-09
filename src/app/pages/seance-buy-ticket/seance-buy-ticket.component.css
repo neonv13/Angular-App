@@ -1,0 +1,26 @@
+.space{
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.seats{
+    float: left;
+    width: fit-content;
+}
+.btnforNG{
+    width: 50px;
+    margin: 2px;
+}
+.forSaveBtn{
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+hr{
+    margin-top: 30px;
+    border-width: 5px;
+    color: black;
+    background-color:black;
+}

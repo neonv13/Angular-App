@@ -1,0 +1,44 @@
+<form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="titleMovie" class="form-label">Date</label>
+
+      <input type="date" name="title" [(ngModel)]="date" class="form-control" >
+
+
+    </div>
+    <div class="mb-3">
+      <label for="movieDuration" class="form-label">Time</label>
+
+      <input type="time" name="duration" [(ngModel)]="time" class="form-control" >
+
+    </div>
+
+    
+    <div class="input-group mb-3 ">
+        <select id="movieId" name="movieId"
+         [(ngModel)]="movieId"
+         class="form-select form-control" >
+            <option *ngFor="let movie of movies" [value]="movie.id">
+                {{movie.title}}
+            </option>          
+        </select>
+    </div>
+    <div class="input-group mb-3 ">
+        <select id="hallId" name="hallId"
+         [(ngModel)]="hallId"
+         class="form-select form-control" >
+            <option *ngFor="let hall of halls" [value]="hall.id">
+                
+                nr: {{hall.nr}} | seats: {{hall.seats}}
+            </option>          
+        </select>
+    </div>
+
+
+        
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+

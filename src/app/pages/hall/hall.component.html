@@ -1,0 +1,21 @@
+<app-hall-add-item
+*ngIf="!hallupdate" 
+(onAddHall)="addHall($event)"
+[halls]="halls"
+></app-hall-add-item>
+
+<app-hall-update-item
+*ngIf="hallupdate"
+[hall]="hallupdate"
+(onCancelUpdate)="updateCancel()" 
+(onUpdateHall)="updateHall($event)"
+[halls]="halls"
+></app-hall-update-item>
+
+<app-hall-item
+*ngFor="let hall of halls"
+[hall]="hall"
+(onDeleteHall)="deleteHall(hall)" 
+(onUpdateHallRequest)="updateHallRequest(hall)"
+class="hallContainer"
+></app-hall-item>

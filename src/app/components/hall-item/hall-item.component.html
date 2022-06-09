@@ -1,0 +1,14 @@
+<div
+  class="hall"
+>
+  <h3>
+    {{ hall.nr }}
+    <div class="btn-group">
+
+      <button class="btn btn-outline-danger" (click)="onDelete(hall)">Delete</button>
+      <button class="btn btn-outline-primary" (click)="onUpdateRequest(hall)">Edit</button>
+    </div>
+  </h3>
+  <p>Seats: {{hall.seats}}</p>
+</div>
+

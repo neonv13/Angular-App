@@ -1,0 +1,16 @@
+<form (ngSubmit)="onSubmit(0) ">
+    <div class="mb-3">
+      <label for="titleMovie" class="form-label">Title</label>
+
+      <input type="text" name="title" [(ngModel)]="title" class="form-control" >
+
+    </div>
+    <div class="mb-3">
+      <label for="movieDuration" class="form-label">Duration</label>
+
+      <input type="number" name="duration" [(ngModel)]="duration" class="form-control" >
+
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <button type="cancel" class="btn btn-danger" (click)="onSubmit(1)">Cancel</button>
+</form>

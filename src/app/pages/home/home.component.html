@@ -1,0 +1,17 @@
+<form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="titleMovie" class="form-label">Date</label>
+
+      <input type="date" name="title" [(ngModel)]="formDate" class="form-control" >
+
+
+    </div>    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<app-movie-seance-item 
+*ngFor="let movie of movies" 
+[movie]="movie" 
+[seances]="getSeances(movie)"
+class="movieContainer"
+></app-movie-seance-item> 

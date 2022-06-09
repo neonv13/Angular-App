@@ -1,0 +1,21 @@
+<app-seance-add-item
+*ngIf="!seanceupdate"
+[seances]="seances"
+(onAddSeance)="addSeance($event)"
+></app-seance-add-item>
+
+<app-seance-update-item
+*ngIf="seanceupdate"
+[seance]="seanceupdate"
+[seances]="seances"
+(onCancelUpdate)="updateCancel()"
+(onUpdateSeance)="updateSeance($event)"
+></app-seance-update-item>
+
+<app-seance-item
+*ngFor="let seance of seances"
+[seance]="seance"
+(onDeleteSeance)="deleteSeance(seance)" 
+(onUpdateSeanceRequest)="updateSeanceRequest(seance)"
+class="seanceContainer"
+></app-seance-item>

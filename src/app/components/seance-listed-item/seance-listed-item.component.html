@@ -1,0 +1,43 @@
+<div
+*ngIf="onGoing()"
+  class="seance"
+>
+  <h3>
+    
+    <div 
+    *ngIf="!ifInPast()"
+    class="btn-group">
+      <button class="btn btn-outline-primary" routerLink="/buy-ticket/{{seance.id}}">Buy ticked</button>
+    </div>
+    <div 
+    *ngIf="ifInPast()"
+    class="btn-group">
+      <button class="btn btn-warning" disabled>On going</button>
+    </div>
+  </h3>
+  <div>
+    Date: {{ seance.date | date: 'medium' }} <br>
+    Movie: {{ movie.title }} <br>
+    Hall nr: {{ hall.nr }}
+    Free seats: {{getSeats()}}
+  </div>
+</div>
+
+<div
+*ngIf="!onGoing()"
+  class="seance"
+>
+  <h3>
+    <div 
+    *ngIf="!ifInPast()"
+    class="btn-group">
+      <button class="btn btn-outline-primary" routerLink="/buy-ticket/{{seance.id}}">Buy ticked</button>
+    </div>
+  </h3>
+    <div>
+      Date: {{ seance.date | date: 'medium' }} <br>
+      Movie: {{ movie.title }} <br>
+      Hall nr: {{ hall.nr }}     
+      Free seats: {{getSeats()}}
+    </div>
+</div>

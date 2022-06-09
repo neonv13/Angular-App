@@ -1,0 +1,33 @@
+<div
+  class="movie"
+  *ngIf="checkSeances()"
+
+>
+  <h3>
+    {{ movie.title }}
+  </h3>
+  duration: {{movie.duration}}<br>
+  Ticked Sold: {{getTicket()}}
+  <div
+    *ngFor="let seance of seances" 
+    >
+    <a 
+    *ngIf="ifActive(seance)"
+    routerLink={{getLink(seance.id!)}}
+    >{{seance.date |  date : 'medium'}}</a>
+    
+    <!-- {{seance.date |  date:'shortTime'}} -->
+    <div 
+    *ngIf="!ifActive(seance)"
+    >
+    <p
+    *ngIf="!onGoing(seance)"
+    >{{seance.date |  date : 'medium'}}</p>
+    <p
+    *ngIf="onGoing(seance)"
+    >{{seance.date |  date : 'medium'}} -- On Going</p>
+    </div>
+    
+  </div>
+
+</div>

@@ -1,0 +1,8 @@
+
+<app-seance-listed-item
+*ngFor="let seance of seances"
+[seance]="seance"
+(onDeleteSeance)="deleteSeance(seance)" 
+(onUpdateSeanceRequest)="updateSeanceRequest(seance)"
+class="seanceContainer"
+></app-seance-listed-item>

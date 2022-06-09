@@ -1,0 +1,39 @@
+<div class="space">
+    <H1>Choose Seats</H1>
+    <hr>
+</div>
+
+<div ngClass="seats" *ngFor="let i of [].constructor(seat); let x= index">
+    <button 
+    *ngIf="!seatsList[x] || seatsList[x] == 0"
+    ngClass="btnforNG btn btn-success"
+    (click)="onClick(x)"
+    >{{x}}</button>
+
+    <button 
+    *ngIf="seatsList[x] == 1"
+    ngClass="btnforNG btn btn-warning"
+    (click)="onClick(x)"
+    >{{x}}</button>
+
+
+    <button 
+    *ngIf="seatsList[x] == 2"
+    ngClass="btnforNG btn btn-danger"
+    >{{x}}</button>
+</div>
+
+<div ngClass = "forSaveBtn">
+    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+        <button 
+        ngClass="btn btn-outline-primary"
+        (click)="onSave()"
+        routerLink="/home"
+        >Save</button>
+        <button 
+        ngClass="btn btn-outline-primary"
+        routerLink="/home"
+        >Go back</button>
+    </div>
+</div>

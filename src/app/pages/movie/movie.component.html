@@ -1,0 +1,24 @@
+
+<app-movie-add-item 
+*ngIf="!movieupdate" 
+[movies]="movies"
+(onAddMovie)="addMovie($event)"
+></app-movie-add-item>     
+
+<app-movie-update-item 
+*ngIf="movieupdate"
+[movie]="movieupdate"
+[movies]="movies"
+(onCancelUpdate)="updateCancel()" 
+(onUpdateMovie)="updateMovie($event)"
+></app-movie-update-item>     
+
+<app-movie-item 
+*ngFor="let movie of movies" 
+[movie]="movie" 
+(onDeleteMovie)="deleteMovie(movie)" 
+(onUpdateMovieRequest)="updateMovieRequest(movie)"
+class="movieContainer"
+></app-movie-item> 
+
+

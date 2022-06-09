@@ -1,0 +1,15 @@
+<form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="hallNr" class="form-label">Nr</label>
+
+      <input type="number" name="title" [(ngModel)]="nr" class="form-control" >
+
+    </div>
+    <div class="mb-3">
+      <label for="halSeats" class="form-label">Seats</label>
+
+      <input type="number" name="duration" [(ngModel)]="seats" class="form-control" >
+
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
